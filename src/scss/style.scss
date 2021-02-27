@@ -1,0 +1,140 @@
+$body-bg: #333;
+$color: #fff;
+$color-primary: #008ed6;
+$icon-font-size: 30px;
+$icon-extrasm-font-size: 20px;
+
+body {
+    background: $body-bg;
+    color: $color;
+}
+
+//########## NAVBAR SECTION #############
+.navbar {
+    border-bottom: 3px solid $color-primary;
+    background: #292b2c;
+    opacity: 0.7;
+}
+
+//########## HOME SECTION #############
+#home-section {
+    background: url(../assets/home.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    .dark-overlay {
+        background: rgba(0, 0, 0, 0.7);
+        min-height: 700px;
+    }
+    .fa {
+        background: $color;
+        color: $color-primary;
+        padding: 4px;
+        font-size: $icon-font-size;
+        border-radius: 5px;
+    }
+    .card-form {
+        opacity: 0.7;
+    }
+    .home-inner {
+        padding-top: 110px;
+        padding-bottom: 50px;
+    }
+}
+
+//########## EXPLORE SECTION #############
+#explore-main-section {
+    .fa {
+        font-size: $icon-font-size;
+        background: $body-bg;
+        color: $color;
+        padding: 4px;
+        border-radius: 5px;
+    }
+}
+
+//########## CREATE SECTION #############
+#create-main-section {
+    .fa {
+        background: $color;
+        color: $color-primary;
+        padding: 4px;
+        font-size: $icon-font-size;
+        border-radius: 5px;
+    }
+}
+
+//########## SHARE SECTION #############
+#share-main-section {
+    .fa {
+        background: $body-bg;
+        color: $color;
+        padding: 4px;
+        font-size: $icon-font-size;
+        border-radius: 5px;
+    }
+}
+// ############### MODALS SECTION ####################
+.error {
+    -webkit-animation: status 7s ease forwards;
+            animation: status 7s ease forwards;
+}
+@-webkit-keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+.fa-check-circle {
+    font-size: 3rem;
+    color: #007e33;
+}
+.fa-times-circle {
+    font-size: 3rem;
+    color: #cc0000;
+}
+
+// ######### MEDIA QUERY #########
+@media (max-width: 575px) {
+    #home-section .para,
+    #explore-main-section .para,
+    #create-main-section .para,
+    #share-main-section .para {
+        font-size: $icon-extrasm-font-size;
+        margin-left: -25px;
+    }
+    #home-section .fa,
+    #explore-main-section .fa,
+    #create-main-section .fa,
+    #share-main-section .fa {
+        font-size: $icon-extrasm-font-size;
+        border-radius: 4px;
+    }
+}
+@media (max-width: 767px) {
+    #home-section h1 {
+        font-size: 38px;
+    }
+}

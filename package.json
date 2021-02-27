@@ -1,0 +1,19 @@
+{
+  "name": "bs4-stater",
+  "version": "1.0.0",
+  "description": "Bootstrap Stater",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Marzuk",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
